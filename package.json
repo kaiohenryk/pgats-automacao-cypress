@@ -1,0 +1,16 @@
+{
+  "name": "trabalho-automacao-web",
+  "version": "1.0.0",
+  "description": "Trabalho de conclusão da disciplina de Automação Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Caio Carvalho",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.7.3",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}

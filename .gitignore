@@ -1,0 +1,8 @@
+# Ignorar arquivos
+*.log
+browserstack.json
+
+# Ignorar pastas
+node_modules/
+reports/
+log/
