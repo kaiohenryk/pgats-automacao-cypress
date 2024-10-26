@@ -6,3 +6,4 @@ browserstack.json
 node_modules/
 reports/
 log/
+results/
