@@ -1,0 +1,23 @@
+name: 'CI de nível 01'
+
+on:
+  workflow_dispatch: # Trigger manual
+
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Instalando o node na versão 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      
+      - name: Instalando as dependências do projeto
+        run: npm install
+
+      - name: Executando os testes e2e
+        run: npx cypress run
