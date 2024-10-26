@@ -21,3 +21,10 @@ jobs:
 
       - name: Executando os testes e2e
         run: npx cypress run
+      
+      - name: Fazendo o upload do relatório de execução
+        uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: relatorio-de-testes
+          path: ./reports
